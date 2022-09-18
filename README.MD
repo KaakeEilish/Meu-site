@@ -1,6 +1,6 @@
 # NLW-EX 
 
-![preview](./github/meusite.png)
+![preview](./.github/Preview.png)
 
 > Trilha Explorer
 
