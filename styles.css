@@ -1,0 +1,188 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    border-radius: 50%;
+    width: 100x;
+    height: 100px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    border-radius: 50%;
+    width: 130px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .5s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+
+.animes-topi img {
+    border-radius: 10px;
+    width: 90px;
+    border: 1px solid #191979;
+}
+
+.filmes-topi img {
+    border-radius: 10%;
+    width: 90px;
+    border: 1px solid #191979;
+}
+
+.local-topi img {
+    border-radius: 10%;
+    width: 90px;
+    border: 1px solid #191979;
+}
+
+.social-topi img {
+    border-radius: 10%;
+    width: 90px;
+    border: 1px solid black;
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    background-position:top center;
+    background-size: 100%;
+    background-color: black ;
+}
+
+body::-webkit-scrollbar {
+    width: 10px
+} 
+  
+body::-webkit-scrollbar-thumb {   
+    background-color: #2A2634; 
+    border-radius: 5px;  
+}
+
+body * {
+    font-family: "Rambla", sans-serif;
+    line-height: 160%;
+}
+
+main { 
+    max-width: 500px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #32CD32 50.52%, #FF0000 100%);
+    padding-top: 3px;
+    border-radius: 10px;
+}
+
+section {
+    color: white;
+}
+
+section p {
+    color: whitesmoke;
+}
+
+section div {
+    background-color:black;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+/* Animation */
+
+header div {
+    animation: FromLeft 1s .3s backwards;
+}
+
+main section {
+    animation: FromBottom 1s .3s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0s;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(4) {
+    animation-delay: .5s;
+}
+
+@keyframes FromLeft{
+    From {
+        transform: translateY(-500px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes FromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) ;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes FromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
